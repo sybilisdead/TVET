@@ -17,9 +17,8 @@ public class Player : MonoBehaviour
 {
     public string message = "Hello World!";
     public Rigidbody rigid;
+    public float speed = 10;
 
-
-    float Speed = 5;
     // Use this for initialization
     void Start()
     {
@@ -30,9 +29,8 @@ public class Player : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.W))
-
         {
-            rigid.AddForce(Vector3.forward * speed)
+            rigid.AddForce(Vector3.forward * speed);
         }
     }
 }
